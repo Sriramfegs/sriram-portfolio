@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body {
+            /* background-color: #b342d2fa; */
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(2, 2, 30);
+            height: 81px;
+            font-size: 19px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            list-style: none;
+            margin: 0px 23px;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(84, 84, 110);
+            transform: scale(1.1);
+            border-radius: .2rem;
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+
+            transition: .2s ease-in;
+            border-bottom: 2px solid blue;
+
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0px;
+            height: 425px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            font-size: 2rem;
+            position: relative;
+            top: 69px;
+            left: 146px;
+            width: 50%;
+        }
+
+        .rightsection img {
+            width: 100%;
+            position: relative;
+            top: 81px;
+        }
+
+        .purple {
+            color: aqua;
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            height: 80vh;
+            margin: auto;
+        }
+
+        main hr {
+            color: #9c97f1;
+            margin: 40px 84px;
+            height: 1.2px;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 65px 0px;
+            display: flex;
+        }
+        .secondsection .vertical {
+            height: 90px;
+            width: 2px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sriram's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>
+                    Welcome to my student portfolio! I'm <span class="purple">Sriram</span>, an aspiring
+                    <span id="element"></span>
+                    <br>
+                    <br>
+                    I'm currently pursuing my B.Tech in computer science and engineering at Andhra University.
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="https://cdn.pixabay.com/photo/2018/06/27/07/45/college-student-3500990_640.jpg"
+                    alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>Hobbies:</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top1" src="wd.png" alt="">
+                    <div class="vertical-title1">
+                        Web Developing
+                    </div>
+                </div>
+                <div class="vertical">
+                    <image class="image-top2" src="rbo.png">
+                        <div class="vertical-title2">
+                            Reading Books
+                        </div>
+                </div>
+                <div class="vertical">
+                    <image class="image-top3" src="pg.png">
+                        <div class="vertical-title3">
+                            Playing Games
+                        </div>
+                </div>
+                <div class="vertical">
+                    <image class="image-top4" src="pg1.png">
+                        <div class="vertical-title4">
+                            Photography
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Sriram's Portfolio</h2>
+            </div>
+            <div class="footer-Second">
+                <button>Hire me</button>
+            </div>
+            <!-- <div class="footer-Third">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="footer-rights">
+            Copyright&copy; www.sriramsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
